@@ -1,0 +1,19 @@
+[package]
+name = "chessbot"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+chess = "3.2.0"
+
+eframe = "0.22.0"
+egui_extras = {version = "0.22.0", features = ["svg"]}
+
+bot = {path = "crates/bot"}
+
+[workspace]
+members = [
+    "crates/*"
+]
