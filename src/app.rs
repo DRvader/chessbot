@@ -219,7 +219,7 @@ impl ChessBotApp {
             black_time: std::time::Duration::from_secs(60),
 
             white_bot: BotComms::create::<bot::Random>(cc.egui_ctx.clone()),
-            black_bot: BotComms::create::<bot::Random>(cc.egui_ctx.clone()),
+            black_bot: BotComms::create::<bot::GoodTrade>(cc.egui_ctx.clone()),
         }
     }
 

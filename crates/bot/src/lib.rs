@@ -1,3 +1,4 @@
+mod good_trade;
 mod random;
 
 use std::time::Duration;
@@ -21,4 +22,5 @@ where
     fn create() -> Self;
 }
 
+pub use good_trade::GoodTrade;
 pub use random::Random;
